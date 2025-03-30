@@ -1,0 +1,347 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(to right, #1a1a1a, #2a0a3a);
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(255, 0, 127, 0.3);
+    border-bottom: 1px solid #ff007f;
+}
+
+header h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #ff007f;
+    text-shadow: 0 0 10px rgba(255, 0, 127, 0.7);
+    margin-bottom: 1rem;
+}
+
+nav a {
+    color: #00f7ff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border: 1px solid #00f7ff;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+nav a:hover {
+    background-color: rgba(0, 247, 255, 0.1);
+    text-shadow: 0 0 8px rgba(0, 247, 255, 0.7);
+}
+
+/* Main Content Layout */
+.content-container {
+    display: flex;
+    flex: 1;
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+#game-details {
+    flex: 1;
+    min-width: 300px;
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid #333;
+    order: 2;
+}
+
+/* Sidebars */
+#sidebar-left, #sidebar-right {
+    width: 250px;
+    order: 1;
+}
+
+#sidebar-right {
+    order: 3;
+}
+
+.ad-banner img {
+    width: 100%;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+    border: 1px solid #444;
+}
+
+.ad-banner img:hover {
+    transform: scale(1.02);
+}
+
+/* Game Details Content */
+h2 {
+    color: #ff007f;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin: 1.5rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #333;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.rating-box {
+    background: rgba(30, 30, 46, 0.7);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    border: 1px solid #ffcc00;
+}
+
+.rating-box h3 {
+    color: #ffcc00;
+    margin-bottom: 0.5rem;
+}
+
+.rating-box p {
+    font-size: 1.5rem;
+    color: #ffcc00;
+    text-align: center;
+}
+
+/* Controls Section */
+.controls-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.controller {
+    background: #252525;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid #444;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.controller:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 0, 127, 0.2);
+}
+
+.controller h3 {
+    color: #00f7ff;
+    margin-bottom: 1rem;
+}
+
+.controller img {
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Video Section */
+#cyberpunk {
+    width: 100%;
+    order: 4;
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    border: 1px solid #333;
+}
+
+#cyberpunk h1 {
+    color: #ff007f;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#cyberpunk p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.video-item {
+    width: 100%;
+    max-width: 800px;
+}
+
+video {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Recommendations */
+.game-recommendations {
+    background: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border: 1px solid #444;
+}
+
+.game-recommendations h3 {
+    color: #00f7ff;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.game-recommendations ul {
+    list-style: none;
+}
+
+.game-recommendations li {
+    margin-bottom: 0.8rem;
+}
+
+.game-recommendations a {
+    color: #ff007f;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: block;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.game-recommendations a:hover {
+    background: rgba(255, 0, 127, 0.1);
+    padding-left: 1rem;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #1a1a1a, #2a0a3a);
+    color: #aaa;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: auto;
+    border-top: 1px solid #ff007f;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.modal-content img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border: 2px solid #ff007f;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 40px;
+    color: #ff007f;
+    cursor: pointer;
+    display: none;
+}
+
+.modal.active .close {
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #sidebar-left, #sidebar-right {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    #sidebar-left, #sidebar-right {
+        width: 100%;
+        order: 3;
+    }
+    
+    #game-details {
+        order: 1;
+    }
+    
+    #cyberpunk {
+        order: 2;
+    }
+    
+    .controller {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 1rem;
+    }
+    
+    #game-details, #cyberpunk {
+        padding: 1.5rem;
+    }
+    
+    .close {
+        right: 20px;
+        font-size: 30px;
+    }
+}
+
+.no-dots{
+    list-style: none; 
+    padding: 0;  
+    margin: 0;  
+}

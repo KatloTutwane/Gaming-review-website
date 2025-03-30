@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Showcase</title>
+    <link rel="website icon" type="png" href="logos/future.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+       
+
+        <h1>Game Showcase</h1>
+        <a href="Landing Page.html">HOME</a>
+        <select id="filter" onchange="filterGames()">
+            <option value="all">All</option>
+            <option value="action">Action</option>
+            <option value="rpg">RPG</option>
+            <option value="shooter">Shooter</option>
+        </select>
+    </header>
+    
+    <main id="game-container" class="game-grid">
+        <article class="game-item" data-genre="action">
+            <a href="cyberpunk2077.html">
+                <figure class="game-img" style="background-image: url('images/Cyberpunk 2077.webp');">
+                    <figcaption>
+                       <h2>Cyberpunk 2077</h2>
+    
+                    </figcaption>
+                </figure>
+            </a>
+        </article>
+
+        <article class="game-item" data-genre="action">
+            <a href="monsterhunterwilds.html">
+                <figure class="game-img" style="background-image: url('images/Mhwilds.webp');">
+                    <figcaption>
+                        <h2>Monster Hunter Wilds</h2>
+                        
+
+                    </figcaption>
+                </figure>
+            </a>
+        </article>
+
+        <article class="game-item" data-genre="action">
+            <a href="assassinscreedvalhalla.html">
+                <figure class="game-img" style="background-image: url('images/Ac Valhala.webp');">
+                    <figcaption>
+                        <h2>Assassin's Creed Valhalla</h2>
+
+                    </figcaption>
+                </figure>
+            </a>
+        </article>
+
+        <article class="game-item" data-genre="rpg">
+            <a href="thewitcher3.html">
+                <figure class="game-img" style="background-image: url('images/the witcher 3.webp');">
+                    <figcaption>
+                        <h2>The Witcher 3: Wild Hunt</h2>
+
+                    </figcaption>
+                </figure>
+            </a>
+        </article>
+
+        <article class="game-item" data-genre="action">
+            <a href="reddeadredemption2.html">
+                <figure class="game-img" style="background-image: url('images/rdr2.webp');">
+                    <figcaption>
+                        <h2>Red Dead Redemption 2</h2>
+                    </figcaption>
+                </figure>
+            </a>
+        </article>
+
+        <article class="game-item" data-genre="action">
+            <a href="spidermanmilesmorales.html">
+                <figure class="game-img" style="background-image: url('images/SpiderManMiles Morales.webp');">
+                    <figcaption>
+                        <h2>Spider-Man: Miles Morales</h2>
+                    </figcaption>
+                </figure>
+            </a>
+        </article>
+
+        <article class="game-item" data-genre="action">
+            <a href="ghostoftsushima.html">
+                <figure class="game-img" style="background-image: url('images/Ghost of Tsushima.webp');">
+                    <figcaption>
+                        <h2>Ghost of Tsushima</h2>
+                    </figcaption>
+                </figure>
+            </a>
+        </article>
+
+        <article class="game-item" data-genre="rpg">
+            <a href="horizonforbiddenwest.html">
+                <figure class="game-img" style="background-image: url('images/Horizon Forbidden West.webp');">
+                    <figcaption>
+                        <h2>Horizon Forbidden West</h2>
+                    </figcaption>
+                </figure>
+            </a>
+        </article>
+
+        <article class="game-item" data-genre="shooter">
+            <a href="farcry6.html">
+                <figure class="game-img" style="background-image: url('images/Far Cry 6.webp');">
+                    <figcaption>
+                        <h2>Far Cry 6</h2>
+                    </figcaption>
+                </figure>
+            </a>
+        </article>
+
+        <article class="game-item" data-genre="shooter">
+            <a href="callofdutyvanguard.html">
+                <figure class="game-img" style="background-image: url('images/Call of DutyVanguard.webp');">
+                    <figcaption>
+                        <h2>Call of Duty: Vanguard</h2>
+                    </figcaption>
+                </figure>
+            </a>
+        </article>
+    </main>
+
+    <script defer src="script.js"></script>
+</body>
+</html>
